@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <header>
+        <h1>ABHISHEK MARKETING</h1>
+        <p>Reach your target audience with our digital marketing solutions.</p>
+    </header>
+
+    <section>
+        <h2>Services</h2>
+        <ul>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Pay-Per-Click Advertising (PPC)</li>
+            <li>Social Media Marketing (SMM)</li>
+            <li>Email Marketing</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="nameInput" placeholder="Your Name" required>
+            <input type="email" id="emailInput" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #888;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+document.getElementById('contactForm');
+addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('nameInput').value;
+    var email = document.getElementById('emailInput').value;
+    
+    alert('Submitted:\nName: ' + name + '\nEmail: ' + email);
+
+    document.getElementById('contactForm').reset();
+});
