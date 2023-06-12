@@ -2,34 +2,8 @@
 <html>
 
 <head>
-</head>
-
-<body>
-    <header>
-        <h1>ABHISHEK MARKETING</h1>
-        <p>Reach your target audience with our digital marketing solutions.</p>
-    </header>
-
-    <section>
-        <h2>Services</h2>
-        <ul>
-            <li>Search Engine Optimization (SEO)</li>
-            <li>Pay-Per-Click Advertising (PPC)</li>
-            <li>Social Media Marketing (SMM)</li>
-            <li>Email Marketing</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" id="nameInput" placeholder="Your Name" required>
-            <input type="email" id="emailInput" placeholder="Your Email" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-</body>
-</html>
-
+    <style>
+        
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -79,10 +53,35 @@ form button {
 form button:hover {
     background-color: #0056b3;
 }
+    </style>
+</head>
 
+<body>
+    <header>
+        <h1>ABHISHEK MARKETING</h1>
+        <p>Reach your target audience with our digital marketing solutions.</p>
+    </header>
 
-
-document.getElementById('contactForm');
+    <section>
+        <h2>Services</h2>
+        <ul>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Pay-Per-Click Advertising (PPC)</li>
+            <li>Social Media Marketing (SMM)</li>
+            <li>Email Marketing</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="nameInput" placeholder="Your Name" required>
+            <input type="email" id="emailInput" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+    <script>
+        document.getElementById('contactForm');
 addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -93,3 +92,9 @@ addEventListener('submit', function(event) {
 
     document.getElementById('contactForm').reset();
 });
+    </script>
+</html>
+
+
+
+
